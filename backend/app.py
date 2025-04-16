@@ -1,9 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 from business import get_data
 
 app = Flask(__name__)
 CORS(app)
+@app.route('/')
+def hello_world():
+    return render_template(index.html)
 
 @app.route('/api', methods=['GET'])
 def api():
