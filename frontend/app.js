@@ -1,5 +1,7 @@
 const express = require('express');
-const fetch = require('node-fetch'); // If you're using Node <18
+const fetch = require('node-fetch');
+const API_BASE = "http://56.228.17.178:7860";
+// If you're using Node <18
 
 const app = express();
 const PORT = 3000;
